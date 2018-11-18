@@ -7,10 +7,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Main Page</title>
     <meta name="description" content="created by hollowtree">
+    <link rel="stylesheet" href="http://fonts.font.im/css?family=Just+Another+Hand">
+    <style>
+        body {
+            font-family: 'Just Another Hand', cursive;
+            background: #f3f5f6;
+            color: #4c565a;
+            max-width: 800px;
+            margin: 100px auto 0;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        input,
+        button {
+            color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            margin: 2px 12px;
+            border: 1px solid #b6bec1;
+            border-radius: 3px;
+            padding: 2px 5px;
+            outline: none;
+        }
+
+        input::-webkit-input-placeholder {
+            opacity: .6;
+        }
+
+        .container {
+            border: 1px dashed #b6bec1;
+            border-radius: 10px;
+            padding: 12px 0
+        }
+
+        label span {
+            display: inline-block;
+            text-align: right;
+            width: 100px;
+        }
+
+        input {
+            width: 600px;
+            font-size: 20px;
+            line-height: 28px;
+            background: transparent;
+        }
+
+        .necessary-field:after {
+            content: '*';
+            color: red;
+        }
+
+        .line-button {
+            text-align: center;
+            margin-top: 70px;
+            padding-top: 20px;
+            border-top: 1px dashed #b6bec1;
+        }
+
+        button {
+            width: 300px;
+            height: 30px;
+            background: #d5dbde;
+            cursor: pointer;
+        }
+
+        button:hover {
+            box-shadow: 0 0 5px #d5dbde;
+        }
+    </style>
 </head>
 
 <body>
-    <input type="text" />
+    <div class="container">
+        <p class="necessary-field"><label><span>URL: </span><input type="text" placeholder="https://www.google.com/" /></label></p>
+        <p><label><span>Template: </span><input type="text" placeholder="Default" /></label></p>
+        <p class="line-button"><button>Start</button></p>
+    </div>
 </body>
 
 </html>
